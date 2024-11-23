@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+### Netmaker Network Graph Visualization Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a customized solution to visualize a network graph. It allows users to interact with the graph by dragging individual nodes, making it easier to explore and analyze the connections between them. Node sizes and colors are dynamically adjusted based on the number of connections (degree), providing an intuitive understanding of the graph structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Draggable Nodes: Users can move nodes around to better understand the graph layout.
+- Dynamic Node Styling: Node colors and sizes are determined by the number of connections, making it easier to identify highly connected nodes.
+- - Interactive Design: Built with a clean UI using Tailwind CSS.
+    Responsive Setup: The project is optimized for modern devices and browsers.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React: A flexible JavaScript library for building user interfaces.
+- Vite: A fast build tool and development server.
+- TypeScript: For strong type checking and robust code structure.
+- Tailwind CSS: For quickly styling the user interface.
+- vis-network: A library specifically designed for creating interactive and customizable network visualizations.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Approach
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Customization: The graph visualization is tailored for usability. By making nodes draggable and styling them dynamically based on the connection amount, users can quickly and visually comprehend complex relationships.
+- Modern Tools: Using React, Vite, and TypeScript ensures the project is performant, maintainable, and developer-friendly.
+- Library Integration: The vis-network library is used to efficiently handle graph rendering, while Tailwind CSS handles responsive and aesthetic UI elements.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Setup and Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Clone the GitHub repository to your local machine.
+- Install the project dependencies using npm install.
+- Download the provided API zip file, extract it, and navigate to the extracted folder.
+
+## Running the Project
+
+- Start the API server using npm start. Ensure the API is running on port 3001.
+- Start the React application using npm run dev from the project folder.
+- Open your browser and navigate to http://localhost:5173.
+- Make sure the API server is running at http://localhost:3001.
+
+# Ensure both the frontend (http://localhost:5173) and the API (http://localhost:3001) are running simultaneously. The frontend will fetch data from the API to render the graph.
+
