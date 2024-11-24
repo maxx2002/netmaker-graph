@@ -24,7 +24,7 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <div
-        className={`absolute z-10 w-screen h-screen bg-black opacity-50 lg:hidden ${
+        className={`absolute z-30 w-screen h-screen bg-black opacity-50 lg:hidden ${
           isOpen ? "block" : "hidden"
         }`}
         onClick={closeMenu}
