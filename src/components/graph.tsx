@@ -54,31 +54,21 @@ const Graph: React.FC = () => {
         nodes: {
           borderWidth: 0,
           shape: "dot",
+          physics: false,
         },
         edges: {
           width: 1,
-          smooth: {
-            enabled: true,
-            type: "continuous",
-            roundness: 0.5,
-          },
+          arrows: { to: { enabled: true, scaleFactor: 2 } },
         },
         interaction: {
           tooltipDelay: 0,
           hover: true,
+          dragNodes: true,
+          dragView: true,
+          zoomView: true,
         },
         physics: {
-          enabled: true,
-          stabilization: {
-            iterations: 100,
-          },
-          barnesHut: {
-            gravitationalConstant: -2000,
-            centralGravity: 0.3,
-            springLength: 95,
-            springConstant: 0.04,
-            damping: 0.09,
-          },
+          enabled: false,
         },
         layout: {
           improvedLayout: true,
