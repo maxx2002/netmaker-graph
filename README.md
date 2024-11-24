@@ -1,4 +1,6 @@
-### Netmaker Network Graph Visualization Project
+## Netmaker Network Graph Visualization Project
+
+<img width="1440" alt="Screenshot 2024-11-24 at 21 23 37" src="https://github.com/user-attachments/assets/cee0a34d-96e7-4ab7-9493-766f1edd5cd5">
 
 ## Overview
 
@@ -8,8 +10,8 @@ This project is a customized solution to visualize a network graph. It allows us
 
 - Draggable Nodes: Users can move nodes around to better understand the graph layout.
 - Dynamic Node Styling: Node colors and sizes are determined by the number of connections, making it easier to identify highly connected nodes.
-- - Interactive Design: Built with a clean UI using Tailwind CSS.
-    Responsive Setup: The project is optimized for modern devices and browsers.
+- Interactive Design: Built with a clean UI using Tailwind CSS.
+- Responsive Setup: The project is optimized for modern devices and browsers.
 
 ## Technologies Used
 
@@ -38,5 +40,5 @@ This project is a customized solution to visualize a network graph. It allows us
 - Open your browser and navigate to http://localhost:5173.
 - Make sure the API server is running at http://localhost:3001.
 
-# Ensure both the frontend (http://localhost:5173) and the API (http://localhost:3001) are running simultaneously. The frontend will fetch data from the API to render the graph.
+### Ensure both the deployed frontend (https://netmaker-graph.netlify.app/) or local frontend (http://localhost:5173) and the API (http://localhost:3001) are running simultaneously. The frontend will fetch data from the API to render the graph.
 
